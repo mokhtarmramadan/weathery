@@ -1,7 +1,7 @@
-import { factory } from './utils/redis';
+import { redisConnector } from './utils/redis';
 
 (async () => {
-    const redisClient = await factory();
+    const redisClient = await redisConnector();
     console.log(redisClient.isAlive());
     console.log(await redisClient.get('name'));
     await redisClient.set('name', 'ali', 5);

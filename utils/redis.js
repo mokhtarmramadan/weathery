@@ -49,10 +49,10 @@ class RedisClient {
 }
 
 
-async function factory () {
-  const redisClient = new RedisClient();
-  await redisClient.connect();
-  return redisClient
+async function redisConnector () {
+  const client = new RedisClient();
+  await client.connect();
+  return client;
 }
 
-export { factory };
+export { redisConnector };
