@@ -1,30 +1,46 @@
 import axios from 'axios';
 import fs from 'fs';
+import { redisConnector } from '../utils/redis';
 
 
 class WeatherController {
 
   static async getWeather(req, res) {
-    try {
-      const query = req.query.find;
-      const [ startDate, endDate ] = this.getDate();
-      console.log(startDate, endDate);
-      const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${query}/${startDate}/${endDate}?unitGroup=us&key=ERH9E869B5K8ZYTRVK9QZ66Q5&contentType=json`;
+    const query = req.query.find;
+    const filePath = await this.getAPI(query);
+    this.readFileSync(filePath);
+    return res.send();
+  }
 
-      const response = await axios.get(url);
-      const days = response.data['days'];
-      console.log(days.length);
-      const temDayOne = response.data['days'][0]['tempmax'];
+  static async getAPI(query) {
+    try {
+      const [ startDate, endDate ] = this.getDate();
+      const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${query}/${startDate}/${endDate}?unitGroup=us&key=ERH9E869B5K8ZYTRVK9QZ66Q5&contentType=json`;
+      let response = await axios.get(url);
+      response = response.data;
+
       try {
-        fs.writeFileSync(`tempData/${query}`, JSON.stringify(response.data, null, 4));
+	const filePath = `tempData/${query}`;
+        fs.writeFileSync(filePath, JSON.stringify(response, null, 4));
+        const redisClient = await redisConnector();
+	await redisClient.set(query, filePath);
+	return filePath;
+
       } catch (err) {
-        console.error('Error writing a file', err);
+        console.error('Error writing a file:', err);
+	return res.status(500).json({'error':'Internal server error'});
       }
-      return res.status(200).json(temDayOne);
+
     } catch (err) {
       console.error('Error Requesting 3rd Party API:', err);
-      return res.status(500).json({ error: 'Failed to fetch weather data' });
+      return res.status(500).json({'error':'Internal server error'});
     }
+  }
+
+  static readFileSync(filePath) {
+    let data = fs.readFileSync(filePath, { encoding: 'utf-8', flag: 'r'});
+    data = JSON.parse(data);
+    console.log(data['days']);
   }
 
   static getDate() {
