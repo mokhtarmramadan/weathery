@@ -36,7 +36,7 @@ class RedisClient {
     if (!key || ! value) {
       return console.error('Usage: set(key, value)');
     }
-    this.client.set(key, value, { EX });
+    return this.client.set(key, value, { EX });
   }
 
   async del(key) {
@@ -44,7 +44,7 @@ class RedisClient {
     if (!key) {
       return console.error('Usage: del(key)');
     }
-    this.client.del(key);
+    return this.client.del(key);
   }
 }
 

@@ -2,6 +2,7 @@ import express from 'express';
 import AppController from '../controllers/AppController';
 import WeatherController from '../controllers/WeatherController';
 import UsersController from '../controllers/UsersController';
+import AuthController from '../controllers/AuthController';
 
 
 function controllerRouting(app) {
@@ -27,6 +28,26 @@ function controllerRouting(app) {
   router.post('/users', (req, res) => {
     // API that create a new user
     UsersController.postNew(req, res);
+  });
+
+  router.get('/connect', (req, res) => {
+    // Signs a user in by generating a new authentication token
+    AuthController.getConnect(req, res);
+  });
+
+  router.get('/disconnect', (req, res) => {
+    // Sign-out the user based on the token
+    AuthController.getDisconnect(req, res);
+  });
+
+  router.get('/users/me', (req, res) => {
+    // Retrieve the user base on the token used
+    UsersController.getMe(req, res);
+  });
+
+  router.get('/refresh', (req, res) => {
+    // Returns a new accesst token if refresh token was valid
+    AuthController.getRefresh(req, res);
   });
 
 }
