@@ -38,10 +38,6 @@ class PlansController {
     return res.send("newPlan");
   }
 
-  static async updatePlan(req, res) {
-    return res.send("updatePlan");
-  }
-
   static async deletePlan(req, res) {
     return res.send("deletePlan");
   }

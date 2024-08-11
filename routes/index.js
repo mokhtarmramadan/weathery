@@ -66,13 +66,8 @@ function controllerRouting(app) {
     PlansController.newPlan(req, res);
   });
 
-  router.put('/plans/:id', (req, res) => {
-    // Updates the plan document based on the ID
-    PlansController.updatePlan(req, res);
-  });
-
   router.delete('/plans/:id', (req, res) => {
-    // Updates the plan document based on the ID
+    // Deletes the plan document based on the ID
     PlansController.deletePlan(req, res);
   });
 
