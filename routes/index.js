@@ -31,6 +31,11 @@ function controllerRouting(app) {
     UsersController.postNew(req, res);
   });
 
+  router.get('/users', (req, res) => {
+    // Returns all the users in the DB
+     UsersController.getUsers(req, res);
+  });
+
   router.get('/connect', (req, res) => {
     // Signs a user in by generating a new authentication token
     AuthController.getConnect(req, res);
@@ -63,7 +68,7 @@ function controllerRouting(app) {
 
   router.post('/plans', (req, res) => {
     // Creates a plan
-    PlansController.newPlan(req, res);
+    PlansController.postNew(req, res);
   });
 
   router.delete('/plans/:id', (req, res) => {

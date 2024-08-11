@@ -40,11 +40,35 @@ class UsersController {
 
       const InsertOneResult = await usersCollection.insertOne(newUser);
       if (InsertOneResult.insertedId) {
-        return res.status(200).json(newUser);
+        return res.status(201).json(newUser);
       }
 
     } catch (err) {
       console.error('Unexpected error happened during insertion:', err);
+      return res.status(500).json({'error':'Internal server error'});
+    }
+  }
+
+  static async getUsers(req, res) {
+    const token = req.headers['x-token'];
+    const redisClient = await redisConnector();
+    const userId = await redisClient.get(`auth_${token}`);
+
+    if (!userId) {
+      return res.status(401).json({'error':'Unauthorized'});
+    }
+    try {
+      const dbClient = await mongodbConnector();
+      const userCollection = await dbClient.db.collection('users');
+      const user = await userCollection.findOne({'_id': new ObjectId(userId), 'email': 'mokhtarramdanformal@gmail.com'});
+
+      if (!user) {
+        return res.status(401).json({'error':'Unauthorized'});
+      }
+      const users = await userCollection.find({}).toArray();
+      return res.status(200).json(users);
+    } catch (err) {
+      console.log(err);
       return res.status(500).json({'error':'Internal server error'});
     }
   }
