@@ -3,6 +3,7 @@ import AppController from '../controllers/AppController';
 import WeatherController from '../controllers/WeatherController';
 import UsersController from '../controllers/UsersController';
 import AuthController from '../controllers/AuthController';
+import PlansController from '../controllers/PlansController';
 
 
 function controllerRouting(app) {
@@ -48,6 +49,31 @@ function controllerRouting(app) {
   router.get('/refresh', (req, res) => {
     // Returns a new accesst token if refresh token was valid
     AuthController.getRefresh(req, res);
+  });
+
+  router.get('/plans', (req, res) => {
+    // Retrieve all the plan documents
+    PlansController.getPlans(req, res);
+  });
+
+  router.get('/plans/:id', (req, res) => {
+    // Retrieve the plan document based on the ID
+    PlansController.getIndex(req, res);
+  });
+
+  router.post('/plans', (req, res) => {
+    // Creates a plan
+    PlansController.newPlan(req, res);
+  });
+
+  router.put('/plans/:id', (req, res) => {
+    // Updates the plan document based on the ID
+    PlansController.updatePlan(req, res);
+  });
+
+  router.delete('/plans/:id', (req, res) => {
+    // Updates the plan document based on the ID
+    PlansController.deletePlan(req, res);
   });
 
 }
