@@ -1,28 +1,34 @@
 import { redisConnector } from '../utils/redis';
 import Weather from '../utils/weather';
 
+const resolvers = {
+  async getWeather({ placeLocation }) {
+    try {
+      console.log("Fetching weather for:", placeLocation);
+      const query = placeLocation;
+      const redisClient = await redisConnector();
+      const filePath = await redisClient.get(query.toLowerCase());
 
-class WeatherController {
+      if (filePath) {
+        console.log("Weather data from Redis");
+        const weatherData = Weather.readFileSync(filePath);
+        return weatherData;
+      }
 
-  static async getWeather(req, res) {
-    const query = req.query.find;
-    const redisClient = await redisConnector();
-    const filePath = await redisClient.get(query.toLowerCase());
-    if (filePath) {
-      const weatherData = Weather.readFileSync(filePath);
-      return res.status(200).json(weatherData);
+      const [weatherData, newFilePath] = await Weather.getAPI(query);
+      console.log("Weather data from API:");
+      if (weatherData === 500) {
+        console.error("Error fetching weather data:", newFilePath);
+        throw new Error(newFilePath);  // Throw an error to be caught by GraphQL
+      }
+
+      await redisClient.set(query, newFilePath);
+      return weatherData;
+    } catch (error) {
+      console.error("Error in getWeather resolver:", error.message);
+      throw new Error(`Error fetching weather data: ${error.message}`);
     }
-    const [weatherData, newFilePath] = await Weather.getAPI(query);
-    if (weatherData === 500) {
-      // In case of error weatherData will carry 500 newFilePath will
-      // carry the error message
-      return res.status(500).json(newFilePath);
-    }
-    redisClient.set(query, newFilePath);
-    return res.status(200).json(weatherData);
-  }
+  },
+};
 
-
-}
-
-export default WeatherController;
+export default resolvers;

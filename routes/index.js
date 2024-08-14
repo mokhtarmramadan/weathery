@@ -21,10 +21,10 @@ function controllerRouting(app) {
     AppController.getStats(req, res);
   });
 
-  router.get('/weather', (req, res) => {
+  //router.get('/weather', (req, res) => {
     // API that sends get requests to the 3rd party API
-    WeatherController.getWeather(req, res);
-  });
+    //WeatherController.getWeather(req, res);
+  //});
 
   router.post('/users', (req, res) => {
     // API that create a new user
