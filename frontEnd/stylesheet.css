@@ -1,0 +1,120 @@
+html, body {
+    height: 100%; 
+    margin: 0;
+    overflow-x: hidden;
+}
+body {
+    background: linear-gradient(to bottom, #4682B4 10%, #c1e6f5 100%) !important;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+.container-fluid {
+    background-color: #4682B4 ;
+}
+.navbar-brand {
+    color: white !important;
+}
+.nav-link, .navbar-brand {
+    color: white !important;
+}
+.container-fluid {
+    margin-bottom: -8px !important;
+    margin-top: -8px;
+}
+.d-flex {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 23px;
+    margin-bottom: 15px;
+    width: 50%;
+}
+.temp{
+    background: linear-gradient(to right, #4682B4 10%, #c1e6f5 100%);
+    flex-direction: column;
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+.flex-header {
+    padding: 10px;
+    background-color: #3A5F8A;
+    color: white;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.temp-details {
+    padding: 10px;
+    color: white;
+}
+.flex-me {
+    display: flex;
+}
+.Weather-icon {
+    width: 10%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+#day-temp {
+    height: 50%;
+    width: 50%;
+    font-size: 5rem;
+}
+.btn.btn-outline-success {
+    border-color: #092f5a;
+    color: #092f5a;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn.btn-outline-success:hover {
+    background-color: #3A5F8A;
+    border-color: #3A5F8A;
+}
+.btn.btn-outline-success:active {
+    background-color: #092f5a !important;
+}
+.same-color-div {
+    background-color: white !important;
+    color: black;
+    font-size: 1.2rem;
+}
+.white-bg-div {
+    background: white;
+    flex-direction: column;
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+.forcast-table {
+    padding-left: 50px;
+    padding-right: 20px;
+}
+.forcast-table table {
+    border-collapse: separate;
+    border-spacing: 0 20px;
+    width: 100%;
+    font-size: 1.5rem;
+}
+.forcast-table td {
+    border-bottom: 0.1px solid #f0f0f0;
+}
+.forcast-table tr:last-child td {
+    border-bottom: none;
+}
+.Weather-table-icon {
+    width: 2rem;
+    height: 10%;
+}
+.forcast-table td:nth-child(1) {
+    width: 30%;
+}
+
+.forcast-table td:nth-child(2) {
+    width: 35%;
+}
+
+.forcast-table td:nth-child(3) {
+    width: 35%;
+}
+.more-data-div {
+    display: flex;
+}
