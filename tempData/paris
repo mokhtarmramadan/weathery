@@ -1,0 +1,1799 @@
+{
+    "resolvedAddress": "Paris, Île-de-France, France",
+    "timezone": "Europe/Paris",
+    "description": "Similar temperatures continuing with a chance of rain tomorrow.",
+    "days": [
+        {
+            "datetime": "2024-08-20",
+            "tempmax": 72.6,
+            "tempmin": 57.1,
+            "feelslike": 64.4,
+            "humidity": 79.8,
+            "icon": "rain",
+            "description": "Partly cloudy throughout the day with rain.",
+            "sunset": "20:56:05",
+            "sunrise": "06:50:53",
+            "uvindex": 4,
+            "visibility": 10.4,
+            "precip": 0.237,
+            "hours": [
+                {
+                    "datetime": "00:00:00",
+                    "temp": 63.1,
+                    "feelslike": 63.1,
+                    "humidity": 75.74,
+                    "precip": 0,
+                    "visibility": 6.2,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "01:00:00",
+                    "temp": 61.9,
+                    "feelslike": 61.9,
+                    "humidity": 79.05,
+                    "precip": 0,
+                    "visibility": 6.2,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "02:00:00",
+                    "temp": 60.7,
+                    "feelslike": 60.7,
+                    "humidity": 82.23,
+                    "precip": 0,
+                    "visibility": 6.2,
+                    "uvindex": 0,
+                    "icon": "clear-night"
+                },
+                {
+                    "datetime": "03:00:00",
+                    "temp": 59.5,
+                    "feelslike": 59.5,
+                    "humidity": 83.9,
+                    "precip": 0,
+                    "visibility": 6.2,
+                    "uvindex": 0,
+                    "icon": "clear-night"
+                },
+                {
+                    "datetime": "04:00:00",
+                    "temp": 57.7,
+                    "feelslike": 57.7,
+                    "humidity": 89.49,
+                    "precip": 0,
+                    "visibility": 6.2,
+                    "uvindex": 0,
+                    "icon": "clear-night"
+                },
+                {
+                    "datetime": "05:00:00",
+                    "temp": 57.7,
+                    "feelslike": 57.7,
+                    "humidity": 89.49,
+                    "precip": 0,
+                    "visibility": 6.2,
+                    "uvindex": 0,
+                    "icon": "clear-night"
+                },
+                {
+                    "datetime": "06:00:00",
+                    "temp": 57.1,
+                    "feelslike": 57.1,
+                    "humidity": 91.56,
+                    "precip": 0,
+                    "visibility": 6.2,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "07:00:00",
+                    "temp": 58.3,
+                    "feelslike": 58.3,
+                    "humidity": 89.51,
+                    "precip": 0,
+                    "visibility": 6.2,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "08:00:00",
+                    "temp": 60.3,
+                    "feelslike": 60.3,
+                    "humidity": 80.75,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 1,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "09:00:00",
+                    "temp": 63.1,
+                    "feelslike": 63.1,
+                    "humidity": 75.35,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 2,
+                    "icon": "clear-day"
+                },
+                {
+                    "datetime": "10:00:00",
+                    "temp": 65.9,
+                    "feelslike": 65.9,
+                    "humidity": 69.49,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 4,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "11:00:00",
+                    "temp": 67.9,
+                    "feelslike": 67.9,
+                    "humidity": 68.81,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 4,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "12:00:00",
+                    "temp": 70.2,
+                    "feelslike": 70.2,
+                    "humidity": 67.75,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 4,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "13:00:00",
+                    "temp": 72.6,
+                    "feelslike": 72.6,
+                    "humidity": 63.8,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 2,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "14:00:00",
+                    "temp": 71.7,
+                    "feelslike": 71.7,
+                    "humidity": 68.35,
+                    "precip": 0.004,
+                    "visibility": 15,
+                    "uvindex": 1,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "15:00:00",
+                    "temp": 69.3,
+                    "feelslike": 69.3,
+                    "humidity": 80.38,
+                    "precip": 0.028,
+                    "visibility": 9.9,
+                    "uvindex": 4,
+                    "icon": "rain"
+                },
+                {
+                    "datetime": "16:00:00",
+                    "temp": 67,
+                    "feelslike": 67,
+                    "humidity": 89.91,
+                    "precip": 0.118,
+                    "visibility": 12.9,
+                    "uvindex": 3,
+                    "icon": "rain"
+                },
+                {
+                    "datetime": "17:00:00",
+                    "temp": 67.4,
+                    "feelslike": 67.4,
+                    "humidity": 88.24,
+                    "precip": 0.075,
+                    "visibility": 4.4,
+                    "uvindex": 0,
+                    "icon": "rain"
+                },
+                {
+                    "datetime": "18:00:00",
+                    "temp": 67.9,
+                    "feelslike": 67.9,
+                    "humidity": 85.53,
+                    "precip": 0,
+                    "visibility": 1.8,
+                    "uvindex": 0,
+                    "icon": "rain"
+                },
+                {
+                    "datetime": "19:00:00",
+                    "temp": 67.6,
+                    "feelslike": 67.6,
+                    "humidity": 86.6,
+                    "precip": 0.008,
+                    "visibility": 8.6,
+                    "uvindex": 0,
+                    "icon": "rain"
+                },
+                {
+                    "datetime": "20:00:00",
+                    "temp": 67,
+                    "feelslike": 67,
+                    "humidity": 84.94,
+                    "precip": 0.004,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "rain"
+                },
+                {
+                    "datetime": "21:00:00",
+                    "temp": 65.9,
+                    "feelslike": 65.9,
+                    "humidity": 78.09,
+                    "precip": 0,
+                    "visibility": 12.2,
+                    "uvindex": 0,
+                    "icon": "rain"
+                },
+                {
+                    "datetime": "22:00:00",
+                    "temp": 64.1,
+                    "feelslike": 64.1,
+                    "humidity": 73.99,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "rain"
+                },
+                {
+                    "datetime": "23:00:00",
+                    "temp": 62.1,
+                    "feelslike": 62.1,
+                    "humidity": 73.32,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "rain"
+                }
+            ]
+        },
+        {
+            "datetime": "2024-08-21",
+            "tempmax": 69.3,
+            "tempmin": 53.9,
+            "feelslike": 61.8,
+            "humidity": 67,
+            "icon": "rain",
+            "description": "Partly cloudy throughout the day with a chance of rain.",
+            "sunset": "20:54:10",
+            "sunrise": "06:52:18",
+            "uvindex": 8,
+            "visibility": 15,
+            "precip": 0,
+            "hours": [
+                {
+                    "datetime": "00:00:00",
+                    "temp": 60.3,
+                    "feelslike": 60.3,
+                    "humidity": 75.6,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "rain"
+                },
+                {
+                    "datetime": "01:00:00",
+                    "temp": 58.9,
+                    "feelslike": 58.9,
+                    "humidity": 78.54,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "rain"
+                },
+                {
+                    "datetime": "02:00:00",
+                    "temp": 57.6,
+                    "feelslike": 57.6,
+                    "humidity": 81.62,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "rain"
+                },
+                {
+                    "datetime": "03:00:00",
+                    "temp": 56.6,
+                    "feelslike": 56.6,
+                    "humidity": 84.3,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "04:00:00",
+                    "temp": 56,
+                    "feelslike": 56,
+                    "humidity": 84.83,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "clear-night"
+                },
+                {
+                    "datetime": "05:00:00",
+                    "temp": 55.1,
+                    "feelslike": 55.1,
+                    "humidity": 85.91,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "clear-night"
+                },
+                {
+                    "datetime": "06:00:00",
+                    "temp": 54.4,
+                    "feelslike": 54.4,
+                    "humidity": 87.03,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "07:00:00",
+                    "temp": 53.9,
+                    "feelslike": 53.9,
+                    "humidity": 87.58,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "08:00:00",
+                    "temp": 54.4,
+                    "feelslike": 54.4,
+                    "humidity": 85.87,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "09:00:00",
+                    "temp": 56.7,
+                    "feelslike": 56.7,
+                    "humidity": 79.95,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 2,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "10:00:00",
+                    "temp": 59.6,
+                    "feelslike": 59.6,
+                    "humidity": 74.05,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 4,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "11:00:00",
+                    "temp": 62.7,
+                    "feelslike": 62.7,
+                    "humidity": 66,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 5,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "12:00:00",
+                    "temp": 64.8,
+                    "feelslike": 64.8,
+                    "humidity": 55.72,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 7,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "13:00:00",
+                    "temp": 66.3,
+                    "feelslike": 66.3,
+                    "humidity": 50.9,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 8,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "14:00:00",
+                    "temp": 67.2,
+                    "feelslike": 67.2,
+                    "humidity": 48.35,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 8,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "15:00:00",
+                    "temp": 68.6,
+                    "feelslike": 68.6,
+                    "humidity": 46.01,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 8,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "16:00:00",
+                    "temp": 69.3,
+                    "feelslike": 69.3,
+                    "humidity": 46.43,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 7,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "17:00:00",
+                    "temp": 69.3,
+                    "feelslike": 69.3,
+                    "humidity": 46.75,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 6,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "18:00:00",
+                    "temp": 69,
+                    "feelslike": 69,
+                    "humidity": 46.38,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 5,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "19:00:00",
+                    "temp": 68.1,
+                    "feelslike": 68.1,
+                    "humidity": 47.83,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 3,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "20:00:00",
+                    "temp": 67,
+                    "feelslike": 67,
+                    "humidity": 52.4,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 2,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "21:00:00",
+                    "temp": 64.7,
+                    "feelslike": 64.7,
+                    "humidity": 60.36,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "clear-night"
+                },
+                {
+                    "datetime": "22:00:00",
+                    "temp": 62.9,
+                    "feelslike": 62.9,
+                    "humidity": 64.72,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "23:00:00",
+                    "temp": 60.9,
+                    "feelslike": 60.9,
+                    "humidity": 70.33,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                }
+            ]
+        },
+        {
+            "datetime": "2024-08-22",
+            "tempmax": 75.6,
+            "tempmin": 54.6,
+            "feelslike": 64.9,
+            "humidity": 62.7,
+            "icon": "partly-cloudy-day",
+            "description": "Becoming cloudy in the afternoon.",
+            "sunset": "20:52:14",
+            "sunrise": "06:53:43",
+            "uvindex": 8,
+            "visibility": 15,
+            "precip": 0,
+            "hours": [
+                {
+                    "datetime": "00:00:00",
+                    "temp": 59.3,
+                    "feelslike": 59.3,
+                    "humidity": 73.52,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "01:00:00",
+                    "temp": 58.4,
+                    "feelslike": 58.4,
+                    "humidity": 73.92,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "clear-night"
+                },
+                {
+                    "datetime": "02:00:00",
+                    "temp": 57.5,
+                    "feelslike": 57.5,
+                    "humidity": 75.84,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "03:00:00",
+                    "temp": 56.7,
+                    "feelslike": 56.7,
+                    "humidity": 77.32,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "04:00:00",
+                    "temp": 56.2,
+                    "feelslike": 56.2,
+                    "humidity": 78.31,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "05:00:00",
+                    "temp": 55.7,
+                    "feelslike": 55.7,
+                    "humidity": 78.8,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "06:00:00",
+                    "temp": 55.1,
+                    "feelslike": 55.1,
+                    "humidity": 79.82,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "clear-night"
+                },
+                {
+                    "datetime": "07:00:00",
+                    "temp": 54.6,
+                    "feelslike": 54.6,
+                    "humidity": 81.4,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "clear-day"
+                },
+                {
+                    "datetime": "08:00:00",
+                    "temp": 54.9,
+                    "feelslike": 54.9,
+                    "humidity": 81.98,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "clear-day"
+                },
+                {
+                    "datetime": "09:00:00",
+                    "temp": 58.7,
+                    "feelslike": 58.7,
+                    "humidity": 73.47,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 2,
+                    "icon": "clear-day"
+                },
+                {
+                    "datetime": "10:00:00",
+                    "temp": 62.3,
+                    "feelslike": 62.3,
+                    "humidity": 64.65,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 4,
+                    "icon": "clear-day"
+                },
+                {
+                    "datetime": "11:00:00",
+                    "temp": 65.4,
+                    "feelslike": 65.4,
+                    "humidity": 60.05,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 5,
+                    "icon": "clear-day"
+                },
+                {
+                    "datetime": "12:00:00",
+                    "temp": 68.3,
+                    "feelslike": 68.3,
+                    "humidity": 55.09,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 7,
+                    "icon": "clear-day"
+                },
+                {
+                    "datetime": "13:00:00",
+                    "temp": 70.4,
+                    "feelslike": 70.4,
+                    "humidity": 50.83,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 8,
+                    "icon": "clear-day"
+                },
+                {
+                    "datetime": "14:00:00",
+                    "temp": 72.4,
+                    "feelslike": 72.4,
+                    "humidity": 47.21,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 8,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "15:00:00",
+                    "temp": 74.2,
+                    "feelslike": 74.2,
+                    "humidity": 42.13,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 8,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "16:00:00",
+                    "temp": 75.1,
+                    "feelslike": 75.1,
+                    "humidity": 41.99,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 7,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "17:00:00",
+                    "temp": 75.6,
+                    "feelslike": 75.6,
+                    "humidity": 42.35,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 6,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "18:00:00",
+                    "temp": 75.6,
+                    "feelslike": 75.6,
+                    "humidity": 40.96,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 4,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "19:00:00",
+                    "temp": 74.7,
+                    "feelslike": 74.7,
+                    "humidity": 44.82,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 2,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "20:00:00",
+                    "temp": 73.1,
+                    "feelslike": 73.1,
+                    "humidity": 50.22,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 1,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "21:00:00",
+                    "temp": 70.2,
+                    "feelslike": 70.2,
+                    "humidity": 58.36,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "22:00:00",
+                    "temp": 67.6,
+                    "feelslike": 67.6,
+                    "humidity": 64.01,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "23:00:00",
+                    "temp": 65.6,
+                    "feelslike": 65.6,
+                    "humidity": 68.11,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "cloudy"
+                }
+            ]
+        },
+        {
+            "datetime": "2024-08-23",
+            "tempmax": 76.7,
+            "tempmin": 60.7,
+            "feelslike": 68.2,
+            "humidity": 73.5,
+            "icon": "partly-cloudy-day",
+            "description": "Partly cloudy throughout the day.",
+            "sunset": "20:50:18",
+            "sunrise": "06:55:08",
+            "uvindex": 7,
+            "visibility": 15,
+            "precip": 0.004,
+            "hours": [
+                {
+                    "datetime": "00:00:00",
+                    "temp": 63.9,
+                    "feelslike": 63.9,
+                    "humidity": 72.06,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "01:00:00",
+                    "temp": 62.9,
+                    "feelslike": 62.9,
+                    "humidity": 75.34,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "02:00:00",
+                    "temp": 62,
+                    "feelslike": 62,
+                    "humidity": 79.82,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "03:00:00",
+                    "temp": 61.7,
+                    "feelslike": 61.7,
+                    "humidity": 80.33,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "04:00:00",
+                    "temp": 61.5,
+                    "feelslike": 61.5,
+                    "humidity": 80.84,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "05:00:00",
+                    "temp": 61.2,
+                    "feelslike": 61.2,
+                    "humidity": 81.35,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "06:00:00",
+                    "temp": 61.1,
+                    "feelslike": 61.1,
+                    "humidity": 81.69,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "07:00:00",
+                    "temp": 60.9,
+                    "feelslike": 60.9,
+                    "humidity": 82.03,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "08:00:00",
+                    "temp": 60.7,
+                    "feelslike": 60.7,
+                    "humidity": 82.38,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "09:00:00",
+                    "temp": 62.9,
+                    "feelslike": 62.9,
+                    "humidity": 79.72,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 1,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "10:00:00",
+                    "temp": 65,
+                    "feelslike": 65,
+                    "humidity": 77.18,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 3,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "11:00:00",
+                    "temp": 67.2,
+                    "feelslike": 67.2,
+                    "humidity": 74.76,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 4,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "12:00:00",
+                    "temp": 69.1,
+                    "feelslike": 69.1,
+                    "humidity": 72.89,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 6,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "13:00:00",
+                    "temp": 70.9,
+                    "feelslike": 70.9,
+                    "humidity": 71.08,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 7,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "14:00:00",
+                    "temp": 72.8,
+                    "feelslike": 72.8,
+                    "humidity": 69.34,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 5,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "15:00:00",
+                    "temp": 74.1,
+                    "feelslike": 74.1,
+                    "humidity": 66.75,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 3,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "16:00:00",
+                    "temp": 75.4,
+                    "feelslike": 75.4,
+                    "humidity": 64.28,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 2,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "17:00:00",
+                    "temp": 76.7,
+                    "feelslike": 76.7,
+                    "humidity": 61.91,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 2,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "18:00:00",
+                    "temp": 76.5,
+                    "feelslike": 76.5,
+                    "humidity": 62.53,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 1,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "19:00:00",
+                    "temp": 76.3,
+                    "feelslike": 76.3,
+                    "humidity": 63.17,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 1,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "20:00:00",
+                    "temp": 76,
+                    "feelslike": 76,
+                    "humidity": 63.81,
+                    "precip": 0.004,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "21:00:00",
+                    "temp": 74.3,
+                    "feelslike": 74.3,
+                    "humidity": 68.35,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "22:00:00",
+                    "temp": 72.7,
+                    "feelslike": 72.7,
+                    "humidity": 73.24,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "23:00:00",
+                    "temp": 71,
+                    "feelslike": 71,
+                    "humidity": 78.5,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                }
+            ]
+        },
+        {
+            "datetime": "2024-08-24",
+            "tempmax": 78.9,
+            "tempmin": 65.2,
+            "feelslike": 68.8,
+            "humidity": 79,
+            "icon": "partly-cloudy-day",
+            "description": "Partly cloudy throughout the day.",
+            "sunset": "20:48:21",
+            "sunrise": "06:56:33",
+            "uvindex": 8,
+            "visibility": 15,
+            "precip": 0.146,
+            "hours": [
+                {
+                    "datetime": "00:00:00",
+                    "temp": 69.9,
+                    "feelslike": 69.9,
+                    "humidity": 81.27,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "01:00:00",
+                    "temp": 68.8,
+                    "feelslike": 68.8,
+                    "humidity": 84.15,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "02:00:00",
+                    "temp": 67.7,
+                    "feelslike": 67.7,
+                    "humidity": 87.15,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "clear-night"
+                },
+                {
+                    "datetime": "03:00:00",
+                    "temp": 66.9,
+                    "feelslike": 66.9,
+                    "humidity": 89.34,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "04:00:00",
+                    "temp": 66.2,
+                    "feelslike": 66.2,
+                    "humidity": 91.59,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "05:00:00",
+                    "temp": 65.4,
+                    "feelslike": 65.4,
+                    "humidity": 93.91,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "06:00:00",
+                    "temp": 65.3,
+                    "feelslike": 65.3,
+                    "humidity": 92.92,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "07:00:00",
+                    "temp": 65.3,
+                    "feelslike": 65.3,
+                    "humidity": 91.95,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "08:00:00",
+                    "temp": 65.2,
+                    "feelslike": 65.2,
+                    "humidity": 90.98,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "09:00:00",
+                    "temp": 67.1,
+                    "feelslike": 67.1,
+                    "humidity": 85.12,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 2,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "10:00:00",
+                    "temp": 68.9,
+                    "feelslike": 68.9,
+                    "humidity": 79.68,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 3,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "11:00:00",
+                    "temp": 70.8,
+                    "feelslike": 70.8,
+                    "humidity": 74.62,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 4,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "12:00:00",
+                    "temp": 71.4,
+                    "feelslike": 71.4,
+                    "humidity": 74.05,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 6,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "13:00:00",
+                    "temp": 72,
+                    "feelslike": 72,
+                    "humidity": 73.48,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 7,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "14:00:00",
+                    "temp": 72.6,
+                    "feelslike": 72.6,
+                    "humidity": 72.92,
+                    "precip": 0.012,
+                    "visibility": 15,
+                    "uvindex": 8,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "15:00:00",
+                    "temp": 70.6,
+                    "feelslike": 70.6,
+                    "humidity": 74.44,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 6,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "16:00:00",
+                    "temp": 68.5,
+                    "feelslike": 68.5,
+                    "humidity": 76.01,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 6,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "17:00:00",
+                    "temp": 66.5,
+                    "feelslike": 66.5,
+                    "humidity": 77.64,
+                    "precip": 0.134,
+                    "visibility": 15,
+                    "uvindex": 4,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "18:00:00",
+                    "temp": 78.9,
+                    "feelslike": 78.9,
+                    "humidity": 50.41,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 3,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "19:00:00",
+                    "temp": 73.1,
+                    "feelslike": 73.1,
+                    "humidity": 66.36,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 3,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "20:00:00",
+                    "temp": 69.3,
+                    "feelslike": 69.3,
+                    "humidity": 72.6,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 1,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "21:00:00",
+                    "temp": 68.2,
+                    "feelslike": 68.2,
+                    "humidity": 72.03,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "22:00:00",
+                    "temp": 67.1,
+                    "feelslike": 67.1,
+                    "humidity": 71.45,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "23:00:00",
+                    "temp": 65.9,
+                    "feelslike": 65.9,
+                    "humidity": 70.87,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "cloudy"
+                }
+            ]
+        },
+        {
+            "datetime": "2024-08-25",
+            "tempmax": 72.8,
+            "tempmin": 60.2,
+            "feelslike": 66.5,
+            "humidity": 54.4,
+            "icon": "partly-cloudy-day",
+            "description": "Partly cloudy throughout the day.",
+            "sunset": "20:46:22",
+            "sunrise": "06:57:58",
+            "uvindex": 7,
+            "visibility": 15,
+            "precip": 0.004,
+            "hours": [
+                {
+                    "datetime": "00:00:00",
+                    "temp": 65.3,
+                    "feelslike": 65.3,
+                    "humidity": 70.96,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "01:00:00",
+                    "temp": 64.7,
+                    "feelslike": 64.7,
+                    "humidity": 71.05,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "02:00:00",
+                    "temp": 64.1,
+                    "feelslike": 64.1,
+                    "humidity": 71.14,
+                    "precip": 0.004,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "03:00:00",
+                    "temp": 63.4,
+                    "feelslike": 63.4,
+                    "humidity": 71.54,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "04:00:00",
+                    "temp": 62.7,
+                    "feelslike": 62.7,
+                    "humidity": 71.94,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "clear-night"
+                },
+                {
+                    "datetime": "05:00:00",
+                    "temp": 62,
+                    "feelslike": 62,
+                    "humidity": 72.34,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "clear-night"
+                },
+                {
+                    "datetime": "06:00:00",
+                    "temp": 61.4,
+                    "feelslike": 61.4,
+                    "humidity": 72.76,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "clear-night"
+                },
+                {
+                    "datetime": "07:00:00",
+                    "temp": 60.8,
+                    "feelslike": 60.8,
+                    "humidity": 73.18,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "clear-day"
+                },
+                {
+                    "datetime": "08:00:00",
+                    "temp": 60.2,
+                    "feelslike": 60.2,
+                    "humidity": 73.61,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "clear-day"
+                },
+                {
+                    "datetime": "09:00:00",
+                    "temp": 62,
+                    "feelslike": 62,
+                    "humidity": 68.01,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 1,
+                    "icon": "clear-day"
+                },
+                {
+                    "datetime": "10:00:00",
+                    "temp": 63.9,
+                    "feelslike": 63.9,
+                    "humidity": 62.86,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 2,
+                    "icon": "clear-day"
+                },
+                {
+                    "datetime": "11:00:00",
+                    "temp": 65.7,
+                    "feelslike": 65.7,
+                    "humidity": 58.13,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 4,
+                    "icon": "clear-day"
+                },
+                {
+                    "datetime": "12:00:00",
+                    "temp": 67.8,
+                    "feelslike": 67.8,
+                    "humidity": 50.21,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 5,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "13:00:00",
+                    "temp": 69.8,
+                    "feelslike": 69.8,
+                    "humidity": 43.37,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 6,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "14:00:00",
+                    "temp": 71.9,
+                    "feelslike": 71.9,
+                    "humidity": 37.45,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 7,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "15:00:00",
+                    "temp": 72.2,
+                    "feelslike": 72.2,
+                    "humidity": 35.49,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 7,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "16:00:00",
+                    "temp": 72.5,
+                    "feelslike": 72.5,
+                    "humidity": 33.63,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 7,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "17:00:00",
+                    "temp": 72.8,
+                    "feelslike": 72.8,
+                    "humidity": 31.86,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 7,
+                    "icon": "clear-day"
+                },
+                {
+                    "datetime": "18:00:00",
+                    "temp": 71.8,
+                    "feelslike": 71.8,
+                    "humidity": 33.06,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 6,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "19:00:00",
+                    "temp": 70.7,
+                    "feelslike": 70.7,
+                    "humidity": 34.3,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 4,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "20:00:00",
+                    "temp": 69.7,
+                    "feelslike": 69.7,
+                    "humidity": 35.59,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 3,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "21:00:00",
+                    "temp": 68.1,
+                    "feelslike": 68.1,
+                    "humidity": 39.5,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "22:00:00",
+                    "temp": 66.5,
+                    "feelslike": 66.5,
+                    "humidity": 43.83,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "23:00:00",
+                    "temp": 64.8,
+                    "feelslike": 64.8,
+                    "humidity": 48.65,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "clear-night"
+                }
+            ]
+        },
+        {
+            "datetime": "2024-08-26",
+            "tempmax": 72.6,
+            "tempmin": 57.6,
+            "feelslike": 64.6,
+            "humidity": 53.1,
+            "icon": "partly-cloudy-day",
+            "description": "Partly cloudy throughout the day.",
+            "sunset": "20:44:23",
+            "sunrise": "06:59:23",
+            "uvindex": 7,
+            "visibility": 14.9,
+            "precip": 0.016,
+            "hours": [
+                {
+                    "datetime": "00:00:00",
+                    "temp": 63.9,
+                    "feelslike": 63.9,
+                    "humidity": 50.32,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "01:00:00",
+                    "temp": 63.1,
+                    "feelslike": 63.1,
+                    "humidity": 52.05,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "02:00:00",
+                    "temp": 62.1,
+                    "feelslike": 62.1,
+                    "humidity": 53.85,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "03:00:00",
+                    "temp": 61.4,
+                    "feelslike": 61.4,
+                    "humidity": 58.99,
+                    "precip": 0,
+                    "visibility": 14.6,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "04:00:00",
+                    "temp": 60.7,
+                    "feelslike": 60.7,
+                    "humidity": 64.6,
+                    "precip": 0,
+                    "visibility": 14.2,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "05:00:00",
+                    "temp": 60,
+                    "feelslike": 60,
+                    "humidity": 70.71,
+                    "precip": 0.004,
+                    "visibility": 13.9,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "06:00:00",
+                    "temp": 59.2,
+                    "feelslike": 59.2,
+                    "humidity": 74.34,
+                    "precip": 0,
+                    "visibility": 14.2,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-night"
+                },
+                {
+                    "datetime": "07:00:00",
+                    "temp": 58.4,
+                    "feelslike": 58.4,
+                    "humidity": 78.15,
+                    "precip": 0,
+                    "visibility": 14.6,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "08:00:00",
+                    "temp": 57.6,
+                    "feelslike": 57.6,
+                    "humidity": 82.17,
+                    "precip": 0.012,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "09:00:00",
+                    "temp": 59.7,
+                    "feelslike": 59.7,
+                    "humidity": 70.37,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 1,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "10:00:00",
+                    "temp": 61.8,
+                    "feelslike": 61.8,
+                    "humidity": 60.26,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 2,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "11:00:00",
+                    "temp": 63.9,
+                    "feelslike": 63.9,
+                    "humidity": 51.59,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 3,
+                    "icon": "clear-day"
+                },
+                {
+                    "datetime": "12:00:00",
+                    "temp": 65.3,
+                    "feelslike": 65.3,
+                    "humidity": 49.51,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 4,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "13:00:00",
+                    "temp": 66.7,
+                    "feelslike": 66.7,
+                    "humidity": 47.51,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 5,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "14:00:00",
+                    "temp": 68.1,
+                    "feelslike": 68.1,
+                    "humidity": 45.62,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 7,
+                    "icon": "cloudy"
+                },
+                {
+                    "datetime": "15:00:00",
+                    "temp": 69.6,
+                    "feelslike": 69.6,
+                    "humidity": 41.12,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 6,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "16:00:00",
+                    "temp": 71.1,
+                    "feelslike": 71.1,
+                    "humidity": 37.07,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 5,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "17:00:00",
+                    "temp": 72.6,
+                    "feelslike": 72.6,
+                    "humidity": 33.42,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 5,
+                    "icon": "partly-cloudy-day"
+                },
+                {
+                    "datetime": "18:00:00",
+                    "temp": 71.2,
+                    "feelslike": 71.2,
+                    "humidity": 35.26,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 4,
+                    "icon": "clear-day"
+                },
+                {
+                    "datetime": "19:00:00",
+                    "temp": 69.8,
+                    "feelslike": 69.8,
+                    "humidity": 37.21,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 4,
+                    "icon": "clear-day"
+                },
+                {
+                    "datetime": "20:00:00",
+                    "temp": 68.4,
+                    "feelslike": 68.4,
+                    "humidity": 39.28,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 3,
+                    "icon": "clear-day"
+                },
+                {
+                    "datetime": "21:00:00",
+                    "temp": 66.8,
+                    "feelslike": 66.8,
+                    "humidity": 42.8,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "clear-night"
+                },
+                {
+                    "datetime": "22:00:00",
+                    "temp": 65.2,
+                    "feelslike": 65.2,
+                    "humidity": 46.64,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "clear-night"
+                },
+                {
+                    "datetime": "23:00:00",
+                    "temp": 63.6,
+                    "feelslike": 63.6,
+                    "humidity": 50.84,
+                    "precip": 0,
+                    "visibility": 15,
+                    "uvindex": 0,
+                    "icon": "clear-night"
+                }
+            ]
+        }
+    ]
+}

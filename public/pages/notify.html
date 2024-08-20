@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notify Me</title>
+    <link href="../static/stylesheet.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Weathery</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Today</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/hourly">Hourly</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/daily">7 Days</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/notify">Notify Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="d-flex white-bg-div ">
+        <div class="notify-me-div">
+            <div class="flex-header same-color-div">Let's notify you with your city's weather everyday!</div>
+            <form>
+                <div class="mb-3">
+                    <label for="picking-city" class="form-label">Pick the city you want us to notify you with its forecast:</label>
+                    <select class="form-control dropdown-toggle" aria-label="Pick a city">
+                        <option selected disabled>Choose a city</option>
+                        <option value="New York City, USA">New York City, USA</option>
+                        <option value="Los Angeles, USA">Los Angeles, USA</option>
+                        <option value="Chicago, USA">Chicago, USA</option>
+                        <option value="Houston, USA">Houston, USA</option>
+                        <option value="Miami, USA">Miami, USA</option>
+                        <option value="Toronto, Canada">Toronto, Canada</option>
+                        <option value="Vancouver, Canada">Vancouver, Canada</option>
+                        <option value="Montreal, Canada">Montreal, Canada</option>
+                        <option value="Mexico City, Mexico">Mexico City, Mexico</option>
+                        <option value="Guadalajara, Mexico">Guadalajara, Mexico</option>
+                        <option value="Cancun, Mexico">Cancun, Mexico</option>
+                        <option value="San Francisco, USA">San Francisco, USA</option>
+                        <option value="Boston, USA">Boston, USA</option>
+                        <option value="Dallas, USA">Dallas, USA</option>
+                        <option value="San Diego, USA">San Diego, USA</option>
+                        <option value="Seattle, USA">Seattle, USA</option>
+                        <option value="Atlanta, USA">Atlanta, USA</option>
+                        <option value="Washington, D.C., USA">Washington, D.C., USA</option>
+                        <option value="Philadelphia, USA">Philadelphia, USA</option>
+                        <option value="Austin, USA">Austin, USA</option>
+                        <option value="São Paulo, Brazil">São Paulo, Brazil</option>
+                        <option value="Rio de Janeiro, Brazil">Rio de Janeiro, Brazil</option>
+                        <option value="Buenos Aires, Argentina">Buenos Aires, Argentina</option>
+                        <option value="Santiago, Chile">Santiago, Chile</option>
+                        <option value="Lima, Peru">Lima, Peru</option>
+                        <option value="Bogotá, Colombia">Bogotá, Colombia</option>
+                        <option value="Medellín, Colombia">Medellín, Colombia</option>
+                        <option value="Quito, Ecuador">Quito, Ecuador</option>
+                        <option value="Montevideo, Uruguay">Montevideo, Uruguay</option>
+                        <option value="Asunción, Paraguay">Asunción, Paraguay</option>
+                        <option value="Caracas, Venezuela">Caracas, Venezuela</option>
+                        <option value="Salvador, Brazil">Salvador, Brazil</option>
+                        <option value="Brasília, Brazil">Brasília, Brazil</option>
+                        <option value="Recife, Brazil">Recife, Brazil</option>
+                        <option value="Curitiba, Brazil">Curitiba, Brazil</option>
+                        <option value="La Paz, Bolivia">La Paz, Bolivia</option>
+                        <option value="Sucre, Bolivia">Sucre, Bolivia</option>
+                        <option value="Porto Alegre, Brazil">Porto Alegre, Brazil</option>
+                        <option value="Maracaibo, Venezuela">Maracaibo, Venezuela</option>
+                        <option value="Maceió, Brazil">Maceió, Brazil</option>
+                        <option value="London, UK">London, UK</option>
+                        <option value="Paris, France">Paris, France</option>
+                        <option value="Rome, Italy">Rome, Italy</option>
+                        <option value="Berlin, Germany">Berlin, Germany</option>
+                        <option value="Madrid, Spain">Madrid, Spain</option>
+                        <option value="Barcelona, Spain">Barcelona, Spain</option>
+                        <option value="Lisbon, Portugal">Lisbon, Portugal</option>
+                        <option value="Amsterdam, Netherlands">Amsterdam, Netherlands</option>
+                        <option value="Brussels, Belgium">Brussels, Belgium</option>
+                        <option value="Vienna, Austria">Vienna, Austria</option>
+                        <option value="Zurich, Switzerland">Zurich, Switzerland</option>
+                        <option value="Geneva, Switzerland">Geneva, Switzerland</option>
+                        <option value="Copenhagen, Denmark">Copenhagen, Denmark</option>
+                        <option value="Stockholm, Sweden">Stockholm, Sweden</option>
+                        <option value="Oslo, Norway">Oslo, Norway</option>
+                        <option value="Warsaw, Poland">Warsaw, Poland</option>
+                        <option value="Prague, Czech Republic">Prague, Czech Republic</option>
+                        <option value="Budapest, Hungary">Budapest, Hungary</option>
+                        <option value="Athens, Greece">Athens, Greece</option>
+                        <option value="Istanbul, Turkey">Istanbul, Turkey</option>
+                        <option value="Bucharest, Romania">Bucharest, Romania</option>
+                        <option value="Sofia, Bulgaria">Sofia, Bulgaria</option>
+                        <option value="Dubrovnik, Croatia">Dubrovnik, Croatia</option>
+                        <option value="Tallinn, Estonia">Tallinn, Estonia</option>
+                        <option value="Riga, Latvia">Riga, Latvia</option>
+                        <option value="Vilnius, Lithuania">Vilnius, Lithuania</option>
+                        <option value="Belgrade, Serbia">Belgrade, Serbia</option>
+                        <option value="Ljubljana, Slovenia">Ljubljana, Slovenia</option>
+                        <option value="Sarajevo, Bosnia and Herzegovina">Sarajevo, Bosnia and Herzegovina</option>
+                        <option value="Podgorica, Montenegro">Podgorica, Montenegro</option>
+                        <option value="Tokyo, Japan">Tokyo, Japan</option>
+                        <option value="Beijing, China">Beijing, China</option>
+                        <option value="Shanghai, China">Shanghai, China</option>
+                        <option value="Hong Kong, China">Hong Kong, China</option>
+                        <option value="Seoul, South Korea">Seoul, South Korea</option>
+                        <option value="Singapore, Singapore">Singapore, Singapore</option>
+                        <option value="Bangkok, Thailand">Bangkok, Thailand</option>
+                        <option value="Kuala Lumpur, Malaysia">Kuala Lumpur, Malaysia</option>
+                        <option value="Jakarta, Indonesia">Jakarta, Indonesia</option>
+                        <option value="Manila, Philippines">Manila, Philippines</option>
+                        <option value="Mumbai, India">Mumbai, India</option>
+                        <option value="New Delhi, India">New Delhi, India</option>
+                        <option value="Bangalore, India">Bangalore, India</option>
+                        <option value="Hyderabad, India">Hyderabad, India</option>
+                        <option value="Chennai, India">Chennai, India</option>
+                        <option value="Dubai, UAE">Dubai, UAE</option>
+                        <option value="Abu Dhabi, UAE">Abu Dhabi, UAE</option>
+                        <option value="Doha, Qatar">Doha, Qatar</option>
+                        <option value="Riyadh, Saudi Arabia">Riyadh, Saudi Arabia</option>
+                        <option value="Jeddah, Saudi Arabia">Jeddah, Saudi Arabia</option>
+                        <option value="Tehran, Iran">Tehran, Iran</option>
+                        <option value="Tbilisi, Georgia">Tbilisi, Georgia</option>
+                        <option value="Yerevan, Armenia">Yerevan, Armenia</option>
+                        <option value="Baku, Azerbaijan">Baku, Azerbaijan</option>
+                        <option value="Ulaanbaatar, Mongolia">Ulaanbaatar, Mongolia</option>
+                        <option value="Ho Chi Minh City, Vietnam">Ho Chi Minh City, Vietnam</option>
+                        <option value="Hanoi, Vietnam">Hanoi, Vietnam</option>
+                        <option value="Taipei, Taiwan">Taipei, Taiwan</option>
+                        <option value="Karachi, Pakistan">Karachi, Pakistan</option>
+                        <option value="Cairo, Egypt">Cairo, Egypt</option>
+                        <option value="Lagos, Nigeria">Lagos, Nigeria</option>
+                        <option value="Johannesburg, South Africa">Johannesburg, South Africa</option>
+                        <option value="Cape Town, South Africa">Cape Town, South Africa</option>
+                        <option value="Nairobi, Kenya">Nairobi, Kenya</option>
+                        <option value="Addis Ababa, Ethiopia">Addis Ababa, Ethiopia</option>
+                        <option value="Accra, Ghana">Accra, Ghana</option>
+                        <option value="Casablanca, Morocco">Casablanca, Morocco</option>
+                        <option value="Tunis, Tunisia">Tunis, Tunisia</option>
+                        <option value="Algiers, Algeria">Algiers, Algeria</option>
+                        <option value="Dakar, Senegal">Dakar, Senegal</option>
+                        <option value="Kigali, Rwanda">Kigali, Rwanda</option>
+                        <option value="Lusaka, Zambia">Lusaka, Zambia</option>
+                        <option value="Harare, Zimbabwe">Harare, Zimbabwe</option>
+                        <option value="Maputo, Mozambique">Maputo, Mozambique</option>
+                        <option value="Victoria Island, Nigeria">Victoria Island, Nigeria</option>
+                        <option value="Durban, South Africa">Durban, South Africa</option>
+                        <option value="Bamako, Mali">Bamako, Mali</option>
+                        <option value="Libreville, Gabon">Libreville, Gabon</option>
+                        <option value="Porto-Novo, Benin">Porto-Novo, Benin</option>
+                        <option value="Ouagadougou, Burkina Faso">Ouagadougou, Burkina Faso</option>
+                        <option value="Abidjan, Côte d'Ivoire">Abidjan, Côte d'Ivoire</option>
+                        <option value="Gaborone, Botswana">Gaborone, Botswana</option>
+                        <option value="Windhoek, Namibia">Windhoek, Namibia</option>
+                        <option value="Kampala, Uganda">Kampala, Uganda</option>
+                        <option value="Freetown, Sierra Leone">Freetown, Sierra Leone</option>
+                        <option value="Monrovia, Liberia">Monrovia, Liberia</option>
+                        <option value="Conakry, Guinea">Conakry, Guinea</option>
+                        <option value="Banjul, Gambia">Banjul, Gambia</option>
+                        <option value="Santo Domingo, Dominican Republic">Santo Domingo, Dominican Republic</option>
+                        <option value="Havana, Cuba">Havana, Cuba</option>
+                        <option value="Port-au-Prince, Haiti">Port-au-Prince, Haiti</option>
+                        <option value="San Juan, Puerto Rico">San Juan, Puerto Rico</option>
+                        <option value="Kingston, Jamaica">Kingston, Jamaica</option>
+                        <option value="Georgetown, Guyana">Georgetown, Guyana</option>
+                        <option value="Paramaribo, Suriname">Paramaribo, Suriname</option>
+                        <option value="Bridgetown, Barbados">Bridgetown, Barbados</option>
+                        <option value="Castries, Saint Lucia">Castries, Saint Lucia</option>
+                        <option value="Kingstown, Saint Vincent and the Grenadines">Kingstown, Saint Vincent and the Grenadines</option>
+                        <option value="Port of Spain, Trinidad and Tobago">Port of Spain, Trinidad and Tobago</option>
+                        <option value="Willemstad, Curaçao">Willemstad, Curaçao</option>
+                        <option value="Oranjestad, Aruba">Oranjestad, Aruba</option>
+                        <option value="Kralendijk, Bonaire">Kralendijk, Bonaire</option>
+                        <option value="Saint George's, Grenada">Saint George's, Grenada</option>
+                        <option value="Douglas, Isle of Man">Douglas, Isle of Man</option>
+                        <option value="Gibraltar, Gibraltar">Gibraltar, Gibraltar</option>
+                        <option value="Vatican City, Vatican">Vatican City, Vatican</option>
+                        <option value="San Marino, San Marino">San Marino, San Marino</option>
+                        <option value="Monaco, Monaco">Monaco, Monaco</option>
+                    </select>                    
+                </div>
+                <div class="mb-3">
+                    <label for="appointment-time" class="form-label">Choose a time to notify you:</label>
+                    <input type="time" class="form-control" id="appointment-time" name="appointment-time">
+                </div>
+                <button type="submit" class="btn btn-primary">Notify Me</button>
+            </form>
+        </div>
+    </div>
+    <div class="d-flex white-bg-div ">
+        <div class="notify-me-div">
+            <div class="flex-header same-color-div">Created earlier!</div>
+            <div class="forcast-table">
+                <table>
+                    <tbody>
+                      <tr>
+                        <td style="font-size: medium;">New York, USA</td>
+                        <td style="font-size: medium;">Notify me at</td>
+                        <td style="font-size: medium;">5:00 AM</td>
+                        <td><img class="delete-icon" src="../images/delete.png" alt="Sunny"></td>
+                      </tr>
+                      <tr>
+                        <td style="font-size: medium;">Cairo, Egypt</td>
+                        <td style="font-size: medium;">Notify me at</td>
+                        <td style="font-size: medium;">6:00 AM</td>
+                        <td ><img class="delete-icon" src="../images/delete.png" alt="Sunny"></td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

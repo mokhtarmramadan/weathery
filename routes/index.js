@@ -75,7 +75,5 @@ function controllerRouting(app) {
     // Deletes the plan document based on the ID
     PlansController.deletePlan(req, res);
   });
-
 }
-
 export default controllerRouting;
