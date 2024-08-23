@@ -40,7 +40,7 @@ class UsersController {
 
       const InsertOneResult = await usersCollection.insertOne(newUser);
       if (InsertOneResult.insertedId) {
-        return res.status(201).json(newUser);
+        return res.status(201).json({});
       }
 
     } catch (err) {

@@ -32,7 +32,7 @@
           </div>
         </div>
     </nav>
-    <div class="alert alert-danger" role="alert">
+    <div class="alert alert-danger" style="display: none;" role="alert">
       Bad address, Try again!
     </div>
     <form class="d-flex" role="search">
@@ -150,18 +150,21 @@
                       <td><img class="Weather-table-icon" id="Weather-icon-fourth-second" src="../images/sun.png" alt="Sunny"></td>
                       <td id="nowPlusOne-precip">0%</td>
                     </tr>
+
                     <tr>
                       <td id="nowPlusTwo-time">3 pm</td>
                       <td id="nowPlusTwo-temp">39°</td>
-                      <td"><img class="Weather-table-icon" id="Weather-icon-fourth-third" src="../images/sun.png" alt="Sunny"></td>
+                      <td><img class="Weather-table-icon" id="Weather-icon-fourth-third" src="../images/sun.png" alt="Sunny"></td>
                       <td id="nowPlusTwo-precip">0%</td>
                     </tr>
+
                     <tr>
                       <td id="nowPlusThree-time">4 pm</td>
                       <td id="nowPlusThree-temp">38°</td>
                       <td><img class="Weather-table-icon" id="Weather-icon-fourth-fourth" src="../images/sun.png" alt="Sunny"></td>
                       <td id="nowPlusThree-precip">0%</td>
                     </tr>
+
                     <tr>
                       <td id="nowPlusFour-time">5 pm</td>
                       <td id="nowPlusFour-temp">38°</td>
@@ -175,6 +178,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="../scripts/weathery.js"></script>
+    <script type="module" src="../scripts/weathery.js"></script>
+    <script type="module" src="../scripts/queryWeather.js"></script>
   </body>
 </html>

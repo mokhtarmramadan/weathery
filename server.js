@@ -4,13 +4,13 @@ import schema from './graphql/schema';
 import resolvers from './controllers/WeatherController';
 import path from 'path';
 import cors from 'cors';
+import controllerRouting from './routes/index';
 
 
 const port = process.env.PORT || 8080;
 const app = express();
 
 app.use(express.json());
-
 // GraphQL end-point
 app.use('/weather', createHandler({
   schema,
@@ -43,10 +43,10 @@ app.get('/signup', (req, res) => {
 app.get('/login', (req, res) => {
   res.sendFile(__dirname + "/public/pages/login.html");
 });
+controllerRouting(app);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
-
 export default app;
 

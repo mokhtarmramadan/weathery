@@ -1,72 +1,8 @@
 $(document).ready(init);
+import { getTimeInTimeZone } from './dateTimeDistance.js';
+import { getTimeFormated } from './dateTimeDistance.js';
+import queryWeather from './queryWeather.js';
 
-function queryWeather(query) {
-    return new Promise((resolve, reject) => {
-        $.ajax({
-            url: 'http://localhost:8080/weather',
-            method: 'POST',
-            contentType: 'application/json',
-            data: JSON.stringify({
-                query: `
-                    {
-                        getWeather(placeLocation: "${query}") {
-                            resolvedAddress
-                            timezone
-                            days {
-                                datetime
-                                tempmax
-                                tempmin
-                                feelslike
-                                description
-                                icon
-                                sunrise
-                                sunset
-                                uvindex
-                                visibility
-                                humidity
-                                hours {
-                                    temp
-                                    precip
-                                    icon
-                                }
-                            }
-                        }
-                    }
-                `
-            }),
-            success: function(response) {
-                if (response.data['getWeather'] === null) {
-                    resolve(null);
-                } else {
-                    const weatherData = response.data['getWeather'];
-                    resolve(weatherData);
-                }
-            },
-            error: function(error) {
-                console.error("Error:", error);
-                reject(error);
-            }
-        });
-    });
-}
-
-function getTimeInTimeZone(timeZone) {
-    const options = { timeZone, hour: '2-digit', minute: '2-digit', hour12: false };
-    const formatter = new Intl.DateTimeFormat([], options);
-    return formatter.format(new Date());
-}
-
-function getTimeFormated(hour) {
-    let newHour = Number(hour);
-    if (newHour === 0) {
-        return '12 am';
-    } else if (newHour > 0 && newHour <= 12) {
-        return `${newHour} am`;
-    } else {
-        newHour = newHour - 12;
-        return `${newHour} pm`;
-    }
-}
 
 function displayData(weatherData) {
     if (weatherData === null) {
@@ -78,13 +14,32 @@ function displayData(weatherData) {
         const time = getTimeInTimeZone(weatherData.timezone);
         const [hours, minutes] = time.split(":");
         const now = Number(hours);
-        $(".results").show();
+        const fullTimenow = `${now}.${Number(minutes)}`;
+        let fullSunsetTime = weatherData.days[0].sunset;
+        let fullSunriseTime = weatherData.days[0].sunrise;
+        const [ sunsetHour, sunsetMinute ] = fullSunsetTime.split(':');
+        const [ sunriseHour, sunsriseMinute ] = fullSunriseTime.split(':');
+        fullSunsetTime = `${Number(sunsetHour)}.${sunsetMinute}`;
+        fullSunriseTime = `${Number(sunriseHour)}.${sunsriseMinute}`;
+        console.log(fullSunsetTime, fullTimenow);
+        if (Number(fullTimenow) > Number(fullSunsetTime) || Number(fullTimenow) < Number(fullSunriseTime)) {
+            $("body").attr("style", "background: linear-gradient(to bottom, #000033 10%, #444466 100%) !important;");
+            $(".temp").attr("style", "background: linear-gradient(to right, #000033 10%, #444466 100%) !important;");
+            $(".btn.btn-outline-success").css("border-color", "white");
+            $(".btn.btn-outline-success").css("color", "white");
+            console.log("dark");
+        } else {
+            $("body").attr("style", "background: linear-gradient(to bottom, #4682B4 10%, #c1e6f5 100%) !important;");
+            $(".temp").attr("style", "background: linear-gradient(to right, #4682B4 10%, #c1e6f5 100%) !important;");
+            $(".btn.btn-outline-success").css("border-color", "#092f5a");
+            $(".btn.btn-outline-success").css("color", "#092f5a");
+        }
         // First Div 
         $("#resolvedAddress1").text(`${weatherData.resolvedAddress} As of ${weatherData.days[0].datetime} at ${time}`);
-        $("#day-temp").text(`${weatherData.days[0].hours[0].temp}°`);
+        $("#day-temp").text(`${weatherData.days[0].hours[now].temp}°`);
         $("#description").text(`${weatherData.days[0].description}`);
         $("#tempmax-tempmin").text(`Day ${weatherData.days[0].tempmax}°. Night ${weatherData.days[0].tempmin}°`);
-        $("#Weather-icon-first-first").attr('src', `../images/${weatherData.days[0].icon}.png`);
+        $("#Weather-icon-first-first").attr('src', `../images/${weatherData.days[0].hours[now].icon}.png`);
 
 
         // Second Div 
@@ -97,9 +52,9 @@ function displayData(weatherData) {
         $('#afternoon-precip').text(`${weatherData.days[0].hours[15].precip}%`);
         $('#Weather-icon-second-second').attr('src', `../images/${weatherData.days[0].hours[15].icon}.png`);
 
-        $('#evening-temp').text(`${weatherData.days[0].hours[19].temp}°`);
-        $('#evening-precip').text(`${weatherData.days[0].hours[19].precip}%`);
-        $('#Weather-icon-second-third').attr('src', `../images/${weatherData.days[0].hours[19].icon}.png`);
+        $('#evening-temp').text(`${weatherData.days[0].hours[20].temp}°`);
+        $('#evening-precip').text(`${weatherData.days[0].hours[20].precip}%`);
+        $('#Weather-icon-second-third').attr('src', `../images/${weatherData.days[0].hours[20].icon}.png`);
 
         $('#overnight-temp').text(`${weatherData.days[0].hours[0].temp}°`);
         $('#overnight-precip').text(`${weatherData.days[0].hours[0].precip}%`);
@@ -177,6 +132,7 @@ function displayData(weatherData) {
             $('#nowPlusFour-precip').hide();
             $('#Weather-icon-fourth-fifth').hide();
         }
+        $(".results").show();
         console.log(now);
         console.log(weatherData);
     }
