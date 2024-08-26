@@ -56,7 +56,7 @@ function init() {
                     password,   
                 }),
                 success: function(response) {
-                    let Authorization = `${userName}:${email}`;
+                    let Authorization = `${email}:${password}`;
                     Authorization = btoa(Authorization);
                     $.ajax({
                         url: 'http://0.0.0.0:8080/api/v1/connect',
@@ -65,16 +65,26 @@ function init() {
                             'Authorization': `Basic ${Authorization}`
                         },
                         success: function(response) {
-                            console.log('Success:', response);
+                            const accessToken = response.accessToken;
+                            const refreshToken = response.refreshToken;
+
+                            localStorage.setItem('accessToken', accessToken);
+                            localStorage.setItem('refreshToken', refreshToken);
+                            window.location.href = 'http://localhost:8080/notify';
                         },
                         error: function(error) {
-                            console.log('Error:', error);
+                            let message = JSON.parse(error.responseText);
+                            message = message['error'];
+                            setTimeout(() => {
+                                location.reload();
+                                
+                            }, 1000);
+                            $(".alert-danger").text(message).show();
                         }
                     });
                     
                 },
                 error: function(error) {
-                    console.log("3");
                     let message = JSON.parse(error.responseText);
                     message = message['error'];
                     setTimeout(() => {
@@ -82,8 +92,6 @@ function init() {
                         
                     }, 1000);
                     $(".alert-danger").text(message).show();
-                    
-                    
                 }
             });
         }
