@@ -16,13 +16,13 @@ class PlansController {
     try {
       const dbClient = await mongodbConnector();
       const userCollection = await dbClient.db.collection('users');
-      const user = await userCollection.findOne({'_id': new ObjectId(userId), 'email': 'mokhtarramdanformal@gmail.com'});
+      const user = await userCollection.findOne({'_id': new ObjectId(userId)});
 
       if (!user) {
         return res.status(401).json({'error':'Unauthorized'});
       }
       const plansCollection = await dbClient.db.collection('plans');
-      const plans = await plansCollection.find({}).toArray();
+      const plans = await plansCollection.find({'userId': userId}).toArray();
       return res.status(200).json(plans);
     } catch (err) {
       console.log(err);
@@ -82,7 +82,7 @@ class PlansController {
       }
       const InsertOneResult = await plansCollection.insertOne(newPlan);
       if (InsertOneResult.insertedId) {
-        return res.status(201).json(newPlan);
+        return res.status(201).json({time, planLocation,});
       }
     } catch (err) {
       console.error(err);

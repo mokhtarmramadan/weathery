@@ -1,6 +1,7 @@
 $(document).ready(init);
 import { getTimeInTimeZone } from './dateTimeDistance.js';
 import { getTimeFormated } from './dateTimeDistance.js';
+import { FToC } from './dateTimeDistance.js';
 import queryWeather from './queryWeather.js';
 
 function displayData(weatherData) {
@@ -19,6 +20,17 @@ function displayData(weatherData) {
         if (Number(fullTimenow) > Number(fullSunsetTime) || Number(fullTimenow) < Number(fullSunriseTime)) {
             $("body").attr("style", "background: linear-gradient(to bottom, #000033 10%, #444466 100%) !important;");
         }
+        const cookies = document.cookie;
+        let system = (function(cookies) {
+            const arrayOfCookies = cookies.split('; ');
+            for (let cookie of arrayOfCookies) {
+                const [name, value] = cookie.split('=');
+                if (name === 'system') {
+                    return value;
+                }
+            }
+            return null;
+        })(cookies);
         const $tableBoddy = $('#hourly-table-body');
         const dayHours = weatherData.days[0].hours;
         const timeNow = getTimeInTimeZone(weatherData.timezone);
@@ -27,16 +39,19 @@ function displayData(weatherData) {
         for (let i = 0; i < dayHours.length; i++) {
             const hour = dayHours[i];
             const $row = $('<tr>');
-
+            let hourTemp = hour.temp;
+            if (system && system === '°C') {
+                hourTemp = FToC(hourTemp);
+            }
             if (i === Number(hourNow)) {
                 $row.append(`<td><strong>${getTimeFormated(i)}</strong></td>`);
-                $row.append(`<td><strong>${hour.temp}°</strong></td>`);
+                $row.append(`<td><strong>${Math.round(hourTemp)}°</strong></td>`);
                 $row.append(`<td><img class="Weather-table-icon" src="../images/${hour.icon}.png" alt="Weather Icon"/></td>`);
                 $row.append(`<td><strong>${hour.precip}%</strong></td>`);
             }
             else {
                 $row.append(`<td>${getTimeFormated(i)}</td>`);
-                $row.append(`<td>${hour.temp}°</td>`);
+                $row.append(`<td>${Math.round(hourTemp)}°</td>`);
                 $row.append(`<td><img class="Weather-table-icon" src="../images/${hour.icon}.png" alt="Weather Icon"/></td>`);
                 $row.append(`<td>${hour.precip}%</td>`);
             }

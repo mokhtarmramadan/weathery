@@ -41,6 +41,7 @@ body {
     width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    display: flex;
 }
 .temp-details {
     padding: 10px;
@@ -141,4 +142,25 @@ margin: 20px;
     margin-top: 23px;
     margin-bottom: 15px;
     width: 50%;
+}
+#notify-me-button{
+    margin-left: auto;
+    border: none;
+    background-color: white;
+
+}
+#notify-me-arrow {
+    width: 30px;
+    height: 30px;
+}
+.delete-plan-button {
+    border: none;
+    background-color: white;
+}
+#delete-me-icon {
+    width: 20px;
+    height: 20px;
+}
+.dropdown{
+    margin-left: auto;
 }

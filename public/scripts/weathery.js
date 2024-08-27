@@ -1,6 +1,9 @@
 $(document).ready(init);
 import { getTimeInTimeZone } from './dateTimeDistance.js';
 import { getTimeFormated } from './dateTimeDistance.js';
+import { AmPmFormat } from './dateTimeDistance.js';
+import { FToC } from './dateTimeDistance.js';
+
 import queryWeather from './queryWeather.js';
 
 
@@ -34,29 +37,68 @@ function displayData(weatherData) {
             $(".btn.btn-outline-success").css("border-color", "#092f5a");
             $(".btn.btn-outline-success").css("color", "#092f5a");
         }
+
+        const cookies = document.cookie;
+        let system = (function(cookies) {
+            const arrayOfCookies = cookies.split('; ');
+            for (let cookie of arrayOfCookies) {
+                const [name, value] = cookie.split('=');
+                if (name === 'system') {
+                    return value;
+                }
+            }
+            return null;
+        })(cookies);
+
+        let dayTemp = Math.round(weatherData.days[0].hours[now].temp);
+        let dayMaxTemp = Math.round(weatherData.days[0].tempmax);
+        let dayMinTemp = Math.round(weatherData.days[0].tempmin);
+        let morningTemp = Math.round(weatherData.days[0].hours[9].temp);
+        let afternoonTemp = Math.round(weatherData.days[0].hours[15].temp);
+        let eveningTemp = Math.round(weatherData.days[0].hours[20].temp);
+        let overnightTemp = Math.round(weatherData.days[0].hours[0].temp);
+        let nowTemp = Math.round(weatherData.days[0].hours[now].temp);
+        let feelsLikeTime = Math.round(weatherData.days[0].feelslike);
+
+        if(system) {
+            $('#dropdown-toggle').text(system);
+        }
+
+        if (system && system === '°C') {
+            dayTemp = FToC(dayTemp);
+            dayMaxTemp = FToC(dayMaxTemp);
+            dayMinTemp =  FToC(dayMinTemp);
+            morningTemp = FToC(morningTemp);
+            afternoonTemp = FToC(afternoonTemp);
+            eveningTemp = FToC(eveningTemp);
+            overnightTemp = FToC(overnightTemp);
+            nowTemp = FToC(nowTemp);
+            feelsLikeTime = FToC(feelsLikeTime);
+        }
+
         // First Div 
-        $("#resolvedAddress1").text(`${weatherData.resolvedAddress} As of ${weatherData.days[0].datetime} at ${time}`);
-        $("#day-temp").text(`${weatherData.days[0].hours[now].temp}°`);
+        $("#resolvedAddress1").text(`${weatherData.resolvedAddress} As of ${weatherData.days[0].datetime} at ${AmPmFormat(time)}`);
+        $("#day-temp").text(`${dayTemp}°`);
         $("#description").text(`${weatherData.days[0].description}`);
-        $("#tempmax-tempmin").text(`Day ${weatherData.days[0].tempmax}°. Night ${weatherData.days[0].tempmin}°`);
+        $("#tempmax-tempmin").text(`Day ${dayMaxTemp}°. Night ${dayMinTemp}°`);
         $("#Weather-icon-first-first").attr('src', `../images/${weatherData.days[0].hours[now].icon}.png`);
 
 
         // Second Div 
         $("#resolvedAddress2").text(`Today's Forcast For ${weatherData.resolvedAddress}`);
-        $('#morning-temp').text(`${weatherData.days[0].hours[9].temp}°`);
+        $('#morning-temp').text(`${morningTemp}°`);
         $('#morning-precip').text(`${weatherData.days[0].hours[9].precip}%`);
         $('#Weather-icon-second-first').attr('src', `../images/${weatherData.days[0].hours[9].icon}.png`);
 
-        $('#afternoon-temp').text(`${weatherData.days[0].hours[15].temp}°`);
+        $('#afternoon-temp').text(`${afternoonTemp}°`);
         $('#afternoon-precip').text(`${weatherData.days[0].hours[15].precip}%`);
         $('#Weather-icon-second-second').attr('src', `../images/${weatherData.days[0].hours[15].icon}.png`);
 
-        $('#evening-temp').text(`${weatherData.days[0].hours[20].temp}°`);
+        $('#evening-temp').text(`${eveningTemp}°`);
         $('#evening-precip').text(`${weatherData.days[0].hours[20].precip}%`);
         $('#Weather-icon-second-third').attr('src', `../images/${weatherData.days[0].hours[20].icon}.png`);
 
-        $('#overnight-temp').text(`${weatherData.days[0].hours[0].temp}°`);
+        $('#overnight-temp').text(`${overnightTemp}°`);
         $('#overnight-precip').text(`${weatherData.days[0].hours[0].precip}%`);
         $('#Weather-icon-second-fourth').attr('src', `../images/${weatherData.days[0].hours[0].icon}.png`);
 
@@ -72,8 +114,8 @@ function displayData(weatherData) {
         [h, m, s] = sunset.split(":");
         hm = `${h - 12}:${m} pm`;
         $("#sunset-main").text(`${hm}`);
-        $("#tempmax-tempmin-main").text(`${weatherData.days[0].tempmax}°/${weatherData.days[0].tempmin}°`);
-        $("#feelslike-main").text(`${weatherData.days[0].feelslike}`);
+        $("#tempmax-tempmin-main").text(`${dayMaxTemp}°/${dayMinTemp}°`);
+        $("#feelslike-main").text(`${feelsLikeTime}°`);
         $("#humidity-main").text(`${weatherData.days[0].humidity}%`);
         $("#uv-index-main").text(`${weatherData.days[0].uvindex} of 11`);
         $("#visibility-main").text(`${weatherData.days[0].visibility} Mi`);
@@ -81,13 +123,17 @@ function displayData(weatherData) {
 
         // Fourth Div 
         $('#weather-info-header').text(`Weather Today For ${weatherData.resolvedAddress}`);
-        $('#now-temp').text(`${weatherData.days[0].hours[now].temp}°`);
+        $('#now-temp').text(`${nowTemp}°`);
         $('#now-precip').text(`${weatherData.days[0].hours[now].precip}%`);
         $('#Weather-icon-fourth-first').attr('src', `../images/${weatherData.days[0].hours[now].icon}.png`);
 
         if (now + 1 <= 23) {
+            let nowPlusOneTemp = Math.round(weatherData.days[0].hours[now + 1].temp);
+            if(system && system === '°C') {
+                nowPlusOneTemp = FToC(nowPlusOneTemp);
+            }
             $('#nowPlusOne-time').text(getTimeFormated(now + 1));
-            $('#nowPlusOne-temp').text(`${weatherData.days[0].hours[now + 1].temp}°`);
+            $('#nowPlusOne-temp').text(`${nowPlusOneTemp}°`);
             $('#nowPlusOne-precip').text(`${weatherData.days[0].hours[now + 1].precip}%`);
             $('#Weather-icon-fourth-second').attr('src', `../images/${weatherData.days[0].hours[now + 1].icon}.png`);
         } else {
@@ -98,8 +144,12 @@ function displayData(weatherData) {
         }
 
         if (now + 2 <= 23) {
+            let nowPlusTwoTemp = Math.round(weatherData.days[0].hours[now + 2].temp);
+            if(system && system === '°C') {
+                nowPlusTwoTemp = FToC(nowPlusTwoTemp);
+            }
             $('#nowPlusTwo-time').text(getTimeFormated(now + 2));
-            $('#nowPlusTwo-temp').text(`${weatherData.days[0].hours[now + 2].temp}°`);
+            $('#nowPlusTwo-temp').text(`${nowPlusTwoTemp}°`);
             $('#nowPlusTwo-precip').text(`${weatherData.days[0].hours[now + 2].precip}%`);
             $('#Weather-icon-fourth-third').attr('src', `../images/${weatherData.days[0].hours[now + 2].icon}.png`);
         } else {
@@ -110,8 +160,12 @@ function displayData(weatherData) {
         }
 
         if (now + 3 <= 23) {
+            let nowPlusThreeTemp = Math.round(weatherData.days[0].hours[now + 3].temp);
+            if(system && system === '°C') {
+                nowPlusThreeTemp = FToC(nowPlusThreeTemp);
+            }
             $('#nowPlusThree-time').text(getTimeFormated(now + 3));
-            $('#nowPlusThree-temp').text(`${weatherData.days[0].hours[now + 3].temp}°`);
+            $('#nowPlusThree-temp').text(`${nowPlusThreeTemp}°`);
             $('#nowPlusThree-precip').text(`${weatherData.days[0].hours[now + 3].precip}%`);
             $('#Weather-icon-fourth-fourth').attr('src', `../images/${weatherData.days[0].hours[now + 3].icon}.png`);
         } else {
@@ -122,8 +176,12 @@ function displayData(weatherData) {
         }
  
         if (now + 4 <= 23) {
+            let nowPlusFourTemp = Math.round(weatherData.days[0].hours[now + 4].temp);
+            if(system && system === '°C') {
+                nowPlusFourTemp = FToC(nowPlusFourTemp);
+            }
             $('#nowPlusFour-time').text(getTimeFormated(now + 4));
-            $('#nowPlusFour-temp').text(`${weatherData.days[0].hours[now + 4].temp}°`);
+            $('#nowPlusFour-temp').text(`${nowPlusFourTemp}°`);
             $('#nowPlusFour-precip').text(`${weatherData.days[0].hours[now + 4].precip}%`);
             $('#Weather-icon-fourth-fifth').attr('src', `../images/${weatherData.days[0].hours[now + 4].icon}.png`);
         } else {
@@ -165,5 +223,13 @@ function init() {
         queryWeather(query).then((weatherData) => {
             displayData(weatherData);
         });
+    });
+
+    $('.dropdown-item').click(function() {
+        event.preventDefault();
+        const selectedUnit = $(this).text();
+        document.cookie = `system=${selectedUnit}`;
+        location.reload();
+
     });
 }
